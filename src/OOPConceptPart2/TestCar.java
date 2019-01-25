@@ -19,12 +19,13 @@ public class TestCar {
         c.start();
         c.stop();
         c.refuel();
+        c.engine(); //Inheriting from Vechile super class
 
         System.out.println("**********"); //Dynamic polymorphism or Run time polymorphism, you cannot access theftSafety method
 
-        //Top Casting -- Child class object can be referred by parent class reference variable, we are casting of making BMW class object referred by parent class reference variable
+        //Top Casting -- Child class object can refer to parent class reference variable, we are casting of making BMW class object referred (casting) by parent class reference variable.
         Car c1 = new BMW();  //When Child class object can be referred by parent class reference variable, it is called -- dynamic polyporphism or --> Run time polymorphism
-        c1.start();   //Top casting is allowed as we moving small thing to big thing
+        c1.start();   //Top casting is allowed as we are moving small thing to big thing
         c1.stop();
         c1.refuel();
 
